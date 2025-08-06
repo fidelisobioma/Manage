@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+::after,
+::before {
+  font-family: "Be Vietnam Pro", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --orange-400: hsl(12, 88%, 59%);
+  --orange-350: #f98f75;
+  --blue: hsl(228, 39%, 23%);
+  --gray-900: hsl(233, 12%, 13%);
+  --gray-400: #8d8d8d;
+  --orange-50: hsl(13, 100%, 96%);
+  --gray-50: hsl(0, 0%, 98%);
+  --white: #ffffff;
+  --font-vietnan: "Be Vietnam Pro", sans-serif;
+}
+.wrapper {
+  max-width: 81rem;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+.bg-patern-top {
+  position: absolute;
+  opacity: 1;
+  top: -5%;
+  right: -15%;
+  width: 24rem;
+}
+.bg-patern-middle {
+  position: absolute;
+  opacity: 1;
+  right: -40%;
+  bottom: 0;
+  width: 15rem;
+}
+header {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--white);
+}
+
+img {
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5625rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.nav-header-desk {
+  display: none;
+}
+.menu {
+  width: 25px;
+  height: 18px;
+}
+.logo {
+  width: 109px;
+  height: 17px;
+}
+.intro {
+  padding-top: 3.5rem;
+  padding-bottom: 112px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--white); */
+  position: relative;
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+.intro-text,
+.intro-image {
+  text-align: center;
+}
+.intro-text h1 {
+  letter-spacing: -0.06rem;
+  line-height: 110%;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--blue);
+  font-family: var(--font-vietnan);
+}
+.intro-text p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--gray-400);
+  font-weight: 400;
+  line-height: 162.5%;
+  margin-top: 1.5rem;
+  font-family: var(--font-vietnan);
+}
+.intro-text button {
+  font-size: 0.81rem;
+  line-height: 145%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 17rem;
+  color: var(--white);
+  background-color: var(--orange-400);
+  margin-top: 2rem;
+  /* margin-bottom: 5rem; */
+  box-shadow: 0 15px 25px -5px #f98f75;
+  font-family: var(--font-vietnan);
+}
+.intro button:hover {
+  background-color: var(--orange-350);
+  cursor: pointer;
+}
+
+.about-manage {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: var(--blue);
+  overflow: hidden;
+}
+.about-manage h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 140%;
+  text-align: center;
+  font-family: var(--font-vietnan);
+}
+.about-manage p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--gray-400);
+  font-weight: 400;
+  line-height: 162.5%;
+  margin-top: 1.5rem;
+  font-family: var(--font-vietnan);
+}
+.featues-container {
+  padding-top: 2.5rem;
+  display: grid;
+  gap: 2.5rem;
+  /* border: 1px solid red; */
+}
+.feature-header {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: var(--orange-50);
+  /* right: -1.5rem; */
+  width: 120%;
+  border-radius: 2.44rem 0 0 2.44rem;
+}
+.feature-header .num {
+  background-color: var(--orange-400);
+  color: var(--white);
+  border-radius: 2.44rem;
+  padding: 1rem 1.5rem;
+}
+.feature-header .num span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.feature-header h3 {
+  font-family: bold;
+  font-size: 1rem;
+  line-height: 145%;
+  text-align: center;
+  font-family: var(--font-vietnan);
+}
+.featues-container p {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--gray-400);
+  font-weight: 400;
+  line-height: 162.5%;
+  margin-top: 1.5rem;
+  font-family: var(--font-vietnan);
+}
+.testimonials {
+  padding-top: 7rem;
+}
+@media screen and (min-width: 48rem) {
+  .bg-patern-top {
+    position: absolute;
+    opacity: 1;
+    top: -5%;
+    right: -10%;
+    width: 38rem;
+  }
+
+  .bg-patern-middle {
+    position: absolute;
+    opacity: 1;
+    right: -20%;
+    bottom: 0;
+    width: 15rem;
+  }
+  .nav-header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  .intro {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 42.06rem;
+    margin: auto;
+    gap: 3rem;
+  }
+  .about-manage {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .intro-text p {
+    line-height: 1.75rem;
+  }
+  .intro-text button {
+    margin-top: 1.5rem;
+  }
+  .about-manage h2 {
+    font-size: 2.5rem;
+    line-height: 110%;
+    letter-spacing: -0.06rem;
+  }
+  .about-manage-header {
+    max-width: 31.35rem;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .bg-patern-top {
+    position: absolute;
+    opacity: 1;
+    top: -5%;
+    right: -15%;
+    width: 38rem;
+  }
+  .bg-patern-middle {
+    display: none;
+  }
+  .nav-header {
+    display: none;
+  }
+  .nav-header-desk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  .nav-header-desk .desk-logo {
+    width: 9.13rem;
+    height: 1.5rem;
+  }
+  .nav-header-desk ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  .nav-header-desk ul li {
+    padding: 0.75rem 2rem;
+  }
+  .nav-header-desk ul li a {
+    text-decoration: none;
+    font-size: 0.81rem;
+    line-height: 145%;
+    color: var(--blue);
+  }
+  .nav-header-desk ul li a:hover,
+  .nav-header-desk ul li a:focus {
+    color: var(--gray-400);
+  }
+  .nav-header-desk button {
+    font-size: 0.81rem;
+    line-height: 145%;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 17rem;
+    color: var(--white);
+    background-color: var(--orange-400);
+    box-shadow: 0 15px 25px -5px #f98f75;
+  }
+  .nav-header-desk button:hover,
+  .nav-header-desk button:focus,
+  .intro-text button:hover {
+    background-color: var(--orange-350);
+    cursor: pointer;
+  }
+  .intro {
+    padding-top: 7.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    max-width: unset;
+    margin: unset;
+  }
+  .intro-text {
+    order: 1;
+    text-align: left;
+  }
+  .intro-image {
+    order: 2;
+  }
+  .intro-text h1 {
+    text-align: left;
+    font-size: 3.5rem;
+    line-height: 115%;
+    letter-spacing: -0.0625rem;
+  }
+  .intro-text p {
+    text-align: left;
+  }
+  .about-manage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+  }
+  .about-manage-header {
+    max-width: 27.81rem;
+    margin: unset;
+  }
+  .about-manage-header h2 {
+    text-align: left;
+  }
+  .about-manage-header p {
+    text-align: left;
+  }
+  .featues-container {
+    padding-top: unset;
+  }
+  .feature-header {
+    background-color: var(--white);
+  }
+
+  .featues-container p {
+    margin-left: 5.3rem;
+    /* border: 1px solid red; */
+  }
+}
+@media screen and (min-width: 80rem) {
+  .bg-patern-top {
+    position: absolute;
+    opacity: 1;
+    /* z-index: -1; */
+    top: -5%;
+    right: -15%;
+    width: 45rem;
+    /* width: 38rem; */
+    /* height: 60.63rem; */
+  }
+}
