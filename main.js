@@ -56,6 +56,7 @@ slider.addEventListener("mouseenter", () => {
 slider.addEventListener("mouseleave", () => {
   slider.style.animationPlayState = "running";
 });
+
 //form validation
 const form = document.querySelector("form");
 const errorMsg = document.querySelector(".erromsg");

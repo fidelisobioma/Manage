@@ -264,6 +264,9 @@ img {
   padding: 0 2rem;
   scroll-snap-align: start;
 }
+.repeat-slide {
+  display: none;
+}
 .slide .image {
   width: 72px;
   height: 72px;
@@ -683,8 +686,6 @@ footer .logo {
 
   .featues-container p {
     margin-left: 4.5rem;
-
-    /* border: 1px solid red; */
   }
   .testimonials {
     max-width: unset;
@@ -692,25 +693,26 @@ footer .logo {
     padding-left: 0;
     padding-right: 0;
     position: relative;
-    /* overflow-x: hidden; */
     overflow-y: none;
   }
   .slider-container {
-    /* border: 1px solid red; */
     width: 100%;
     overflow: hidden;
   }
-  .testimonials .slider {
+  .repeat-slide {
+    display: block;
+  }
+  .slider {
     gap: 1.5rem;
     display: flex;
     width: max-content;
     animation: scroll 20s linear infinite;
   }
   @keyframes scroll {
-    0% {
+    from {
       transform: translateX(0);
     }
-    100% {
+    to {
       transform: translateX(-50%);
     }
   }
@@ -728,6 +730,7 @@ footer .logo {
     scroll-snap-type: none;
     scroll-behavior: smooth;
     /* border: 1px solid red; */
+    scroll-snap-type: none;
     position: relative;
     z-index: 999;
   }
