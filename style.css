@@ -12,7 +12,7 @@
   --orange-350: #f98f75;
   --blue: hsl(228, 39%, 23%);
   --gray-900: hsl(233, 12%, 13%);
-  --gray-400: #8d8d8d;
+  --gray-400: #343a40;
   --orange-50: hsl(13, 100%, 96%);
   --gray-50: hsl(0, 0%, 98%);
   --white: #ffffff;
@@ -21,7 +21,6 @@
 .wrapper {
   max-width: 81rem;
   margin: auto;
-  /* border: 1px solid red; */
 }
 .bg-patern-top {
   position: absolute;
@@ -65,7 +64,6 @@ img {
 .overlay {
   position: fixed;
   width: 100%;
-  /* height: 100%; */
   left: 0;
   right: 0;
   top: 0;
@@ -204,7 +202,6 @@ img {
 .feature-header {
   position: relative;
   display: inline-flex;
-  /* flex-wrap: wrap; */
   gap: 0.5rem;
   align-items: center;
   background-color: var(--orange-50);
@@ -462,10 +459,8 @@ footer .logo {
   font-size: 0.81rem;
   font-weight: 400;
   line-height: 200%;
-  color: var(--gray-400);
-  /* padding: 1rem 2rem 1.5rem; */
+  color: var(--gray-50);
   text-align: center;
-  /* max-width: 18.63rem; */
   margin-top: 2.5rem;
 }
 .deskcopyright {
@@ -828,7 +823,7 @@ footer .logo {
     font-size: 0.81rem;
     font-weight: 400;
     line-height: 200%;
-    color: var(--gray-400);
+    color: var(--gray-50);
     padding: 1rem 2rem 1.5rem;
     max-width: 18.63rem;
     margin: auto;
