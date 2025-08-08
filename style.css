@@ -609,7 +609,7 @@ footer .logo {
   }
   .nav-header-desk ul li a:hover,
   .nav-header-desk ul li a:focus {
-    color: var(--gray-400);
+    color: #808080;
   }
   .nav-header-desk button {
     font-size: 0.81rem;
